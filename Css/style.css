@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* =============  CONTAINER 1  ================== */
 .headerSection {
   width: 100%;
   background-color: rgb(0, 0, 0);
@@ -27,7 +28,7 @@
 }
 
 .headerSection .navbar .logo a{
-  color: rgb(165, 77, 77);
+  color:  #b74b4b;
   text-decoration: none;
   font-size: 50px;
   font-weight: 600;
@@ -46,4 +47,10 @@
 }
 .headerSection .navbar ul li a{
   text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.headerSection .navbar ul li a:hover{
+  color:  #b74b4b;
+  border-bottom: 1.5px solid #b74b4b ;
 }
