@@ -67,7 +67,7 @@
 }
 
 /**  screen  md  **/
-@media (min-width: 770){
+@media (min-width: 770px){
   .navbar nav{
     padding: 0 32px 0 32px;
   }
@@ -82,7 +82,7 @@
 }
 
 /**  screen  lg  **/
-@media (min-width: 1025){
+@media (min-width: 1025px){
   .navbar nav{
     padding: 0 65px 0 65px;
   }
@@ -93,14 +93,14 @@
 }
 
 /**  screen  xl  **/
-@media (min-width: 1280){
+@media (min-width: 1280px){
   .navbar nav{
     padding: 0 130px 0 130px;
   }
 }
 
 /**  screen  2xl  **/
-@media (min-width: 1536){
+@media (min-width: 1536px){
   .navbar nav{
     padding: 0 255px 0 255px;
   }
