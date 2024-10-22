@@ -7,3 +7,56 @@
   font-family: "Poppins", sans-serif;
 }
 
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  background-color: black;
+}
+
+.navbar nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px 0 8px;
+}
+
+.navbar nav .logoContainer a{
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: 700;
+  color: red;
+}
+
+.navbar nav .navContainer{
+  display: none;
+  align-items: center;
+  width: min-content;
+
+}
+
+.navbar nav .navContainerForSm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar nav .navContainer ul{
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 450;
+  list-style: none;
+}
+
+.navbar nav .navContainer ul  li a{
+  text-decoration: none;
+}
+
+.navbar nav .navContainer ul li a:hover{
+  color: red;
+}
+
+/**  screen  sm  **/
