@@ -60,3 +60,48 @@
 }
 
 /**  screen  sm  **/
+@media (min-width: 640px){
+  .navbar{
+    padding: 0 16px 0 16px;
+  }
+}
+
+/**  screen  md  **/
+@media (min-width: 770){
+  .navbar nav{
+    padding: 0 32px 0 32px;
+  }
+
+  .navbar nav .navContainer{
+    display: flex;
+  }
+
+  .navbar nav .navContainerForSm{
+    display: none;
+  }
+}
+
+/**  screen  lg  **/
+@media (min-width: 1025){
+  .navbar nav{
+    padding: 0 65px 0 65px;
+  }
+
+  .navbar nav .navContainer ul{
+    gap: 50px;
+  }
+}
+
+/**  screen  xl  **/
+@media (min-width: 1280){
+  .navbar nav{
+    padding: 0 130px 0 130px;
+  }
+}
+
+/**  screen  2xl  **/
+@media (min-width: 1536){
+  .navbar nav{
+    padding: 0 255px 0 255px;
+  }
+}
