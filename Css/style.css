@@ -64,7 +64,12 @@
   .navbar{
     padding: 0 16px 0 16px;
   }
+
+  .navbar nav .navContainer {
+    display: none;
+  }
 }
+
 
 /**  screen  md  **/
 @media (min-width: 770px){
