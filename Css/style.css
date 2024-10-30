@@ -25,8 +25,8 @@
 
 .navbar nav .logoContainer a{
   text-decoration: none;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 500;
   color: red;
 }
 
@@ -47,7 +47,7 @@
   display: flex;
   gap: 20px;
   font-size: 16px;
-  font-weight: 450;
+  font-weight: 250;
   list-style: none;
 }
 
@@ -110,3 +110,5 @@
     padding: 0 255px 0 255px;
   }
 }
+
+
