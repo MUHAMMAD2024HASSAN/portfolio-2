@@ -20,7 +20,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 8px 0 8px;
+  position: relative;
 }
 
 .navbar nav .logoContainer a{
@@ -31,10 +33,14 @@
 }
 
 .navbar nav .navContainer{
-  display: none;
+  background-color: antiquewhite;
   align-items: center;
-  width: min-content;
-
+  width: 100%;
+  position: absolute;
+  top: 180px;
+  left: -120rem;
+  height: calc(100vh - 94px);
+  transition: left 0.5s;
 }
 
 .navbar nav .navContainerForSm{
@@ -45,10 +51,17 @@
 
 .navbar nav .navContainer ul{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   font-size: 16px;
   font-weight: 250;
   list-style: none;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
 }
 
 .navbar nav .navContainer ul  li a{
@@ -72,13 +85,14 @@
 
 
 /**  screen  md  **/
-@media (min-width: 770px){
+@media (min-width: 768px){
   .navbar nav{
     padding: 0 32px 0 32px;
   }
 
   .navbar nav .navContainer{
     display: flex;
+    width: min-content;
   }
 
   .navbar nav .navContainerForSm{
@@ -87,9 +101,9 @@
 }
 
 /**  screen  lg  **/
-@media (min-width: 1025px){
+@media (min-width: 1024px){
   .navbar nav{
-    padding: 0 65px 0 65px;
+    padding: 0 64px 0 64px;
   }
 
   .navbar nav .navContainer ul{
@@ -100,14 +114,14 @@
 /**  screen  xl  **/
 @media (min-width: 1280px){
   .navbar nav{
-    padding: 0 130px 0 130px;
+    padding: 0 128px 0 128px;
   }
 }
 
 /**  screen  2xl  **/
 @media (min-width: 1536px){
   .navbar nav{
-    padding: 0 255px 0 255px;
+    padding: 0 256px 0 256px;
   }
 }
 
