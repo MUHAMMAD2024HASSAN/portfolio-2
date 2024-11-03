@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>portfolio</title>
 </head>
 
@@ -25,7 +25,17 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="navContainerForSm">
+      <div id="mainmenu" class="navContainerForSmallScreen">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Eduction</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navContainerForSm" onclick="menuToogle()">
         <img src="./image/menu-bar.png" alt="" width="40" height="40">
       </div>
     </nav>
@@ -34,7 +44,7 @@
   </section>
 
 
-  <script src="./script.js" ></script>
+  <script src="./js/script.js" ></script>
 </body>
 
 </html>

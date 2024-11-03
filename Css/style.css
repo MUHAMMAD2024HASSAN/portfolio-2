@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6rem;
+  height: 5rem;
   background-color: black;
 }
 
@@ -33,14 +33,10 @@
 }
 
 .navbar nav .navContainer{
-  background-color: antiquewhite;
+  display: none;
   align-items: center;
   width: 100%;
-  position: absolute;
-  top: 180px;
-  left: -120rem;
-  height: calc(100vh - 94px);
-  transition: left 0.5s;
+  
 }
 
 .navbar nav .navContainerForSm{
@@ -49,32 +45,60 @@
   align-items: center;
 }
 
-.navbar nav .navContainer ul{
+.navbar nav .navContainerForSmallScreen {
+  display: flex;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  top: 70px;
+  left: -120rem;
+  height: calc(100vh - 80px);
+  list-style: none;
+  transition: left 0.5s;
+}
+.navbar nav .navContainerForSmallScreen ul {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  font-size: 22px;
+  font-weight: 250;
+  width: 100%;
+  list-style: none;
+}
+
+.navbar nav .navContainerForSmallScreen ul  li a{
+  text-decoration: none;
+}
+
+.navbar nav .navContainerForSmallScreen ul  li a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.navbar nav .navContainer ul{
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   font-size: 16px;
   font-weight: 250;
   list-style: none;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-
 }
 
 .navbar nav .navContainer ul  li a{
   text-decoration: none;
 }
 
-.navbar nav .navContainer ul li a:hover{
+.navbar nav .navContainer ul  li a:hover{
+  text-decoration: none;
   color: red;
 }
 
 /**  screen  sm  **/
 @media (min-width: 640px){
-  .navbar{
+  .navbar nav{
     padding: 0 16px 0 16px;
   }
 
@@ -88,6 +112,9 @@
 @media (min-width: 768px){
   .navbar nav{
     padding: 0 32px 0 32px;
+  }
+  .navbar nav .navContainerForSmallScreen {
+    display: none;
   }
 
   .navbar nav .navContainer{
