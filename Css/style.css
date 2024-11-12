@@ -70,10 +70,12 @@
 
 .navbar nav .navContainerForSmallScreen ul  li a{
   text-decoration: none;
+  transition: 1s;
 }
 
 .navbar nav .navContainerForSmallScreen ul  li a:hover{
   text-decoration: none;
+  border-bottom: 1px solid red;
   color: red;
 }
 
@@ -89,10 +91,12 @@
 
 .navbar nav .navContainer ul  li a{
   text-decoration: none;
+  transition: 1s;
 }
 
 .navbar nav .navContainer ul  li a:hover{
   text-decoration: none;
+  border-bottom: 1px solid red;
   color: red;
 }
 
