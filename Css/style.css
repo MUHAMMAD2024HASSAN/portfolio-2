@@ -78,6 +78,7 @@
   text-decoration: none;
   border-bottom: 1px solid red;
   color: red;
+  transform: scale(1.250) translateY(-5px);
 }
 
 .navbar nav .navContainer ul{
@@ -99,6 +100,7 @@
   text-decoration: none;
   border-bottom: 1px solid red;
   color: red;
+  transform: scale(1.250) translateY(-5px);
 }
 
 /**  screen  sm  **/
