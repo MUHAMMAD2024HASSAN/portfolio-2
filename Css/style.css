@@ -71,7 +71,7 @@
 
 .navbar nav .navContainerForSmallScreen ul  li a{
   text-decoration: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .navbar nav .navContainerForSmallScreen ul  li a:hover{
@@ -92,7 +92,7 @@
 
 .navbar nav .navContainer ul  li a{
   text-decoration: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .navbar nav .navContainer ul  li a:hover{
