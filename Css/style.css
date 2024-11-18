@@ -227,6 +227,10 @@
     display: none;
   }
 
+  .section1{
+    padding: 64px 32px;
+  }
+
   .section1 .heroSection .heroTextContainer{
     align-items: center;
   }
