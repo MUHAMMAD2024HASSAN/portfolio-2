@@ -285,7 +285,7 @@
 
 .section1 .heroSection .heroTextContainer  p{
   text-align: left;
-  width: max-content;
+  max-width: max-content;
 }
 
 }
@@ -325,7 +325,7 @@
   }
 
   .section1{
-    padding: 0px 256px;
+    padding: 256px 256px;
   }
 
 }
