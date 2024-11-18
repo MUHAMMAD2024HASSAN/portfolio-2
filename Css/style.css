@@ -103,78 +103,27 @@
   transform: scale(1.250) translateY(-5px);
 }
 
-/**  screen  sm  **/
-@media (min-width: 640px){
-  .navbar nav{
-    padding: 0 32px 0 32px;
-  }
 
-  .navbar nav .navContainer {
-    display: none;
-  }
-}
-
-
-/**  screen  md  **/
-@media (min-width: 768px){
-  .navbar nav{
-    padding: 0 32px 0 32px;
-  }
-  .navbar nav .navContainerForSmallScreen {
-    display: none;
-  }
-
-  .navbar nav .navContainer{
-    display: flex;
-    width: min-content;
-  }
-
-  .navbar nav .navContainerForSm{
-    display: none;
-  }
-}
-
-/**  screen  lg  **/
-@media (min-width: 1024px){
-  .navbar nav{
-    padding: 0 64px 0 64px;
-  }
-
-  .navbar nav .navContainer ul{
-    gap: 50px;
-  }
-}
-
-/**  screen  xl  **/
-@media (min-width: 1280px){
-  .navbar nav{
-    padding: 0 128px 0 128px;
-  }
-}
-
-/**  screen  2xl  **/
-@media (min-width: 1536px){
-  .navbar nav{
-    padding: 0 256px 0 256px;
-  }
-}
 
 /*** HERO SECTION ***/
 .section1{
   background-color: black;
   padding: 0px 16px;
 }
+
 .section1 .heroSection{
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .section1 .heroSection .heroImgContainer{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .section1 .heroSection .heroImgContainer img{
   width: 65%;
   height: auto;
@@ -183,6 +132,7 @@
 }
 
 .section1 .heroSection .heroTextContainer{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -202,7 +152,7 @@
 }
 
 .section1 .heroSection .heroTextContainer p{
-  max-width: 370px;
+  max-width: 356px;
 }
 
 .section1 .heroSection .heroTextContainer .iconContainer{
@@ -263,4 +213,115 @@
   background-color: red;
   transform: scale3d(1.25);
   font-weight: 400;
+}
+
+/*============================  All media guery  ====================*/
+
+/**  screen  sm  **/
+@media (min-width: 640px){
+  .navbar nav{
+    padding: 0 32px 0 32px;
+  }
+
+  .navbar nav .navContainer {
+    display: none;
+  }
+
+  .section1 .heroSection .heroTextContainer{
+    align-items: center;
+  }
+
+  .section1 .heroSection .heroTextContainer  p{
+    text-align: center;
+  }
+}
+
+
+/**  screen  md  **/
+@media (min-width: 768px){
+  .navbar nav{
+    padding: 0 32px 0 32px;
+  }
+  .navbar nav .navContainerForSmallScreen {
+    display: none;
+  }
+
+  .navbar nav .navContainer{
+    display: flex;
+    width: min-content;
+  }
+
+  .navbar nav .navContainerForSm{
+    display: none;
+  }
+
+  .section1{
+    padding: 64px 32px;
+    height: calc(100 - 6rem);
+  }
+
+  .section1 .heroSection{
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  .section1 .heroSection .heroImgContainer{
+    width: 40%;
+  }
+
+  
+.section1 .heroSection .heroTextContainer{
+  width: 50%;
+}
+
+.section1 .heroSection .heroTextContainer{
+  align-items: start;
+}
+
+.section1 .heroSection .heroTextContainer  p{
+  text-align: left;
+  width: max-content;
+}
+
+}
+
+/**  screen  lg  **/
+@media (min-width: 1024px){
+  .navbar nav{
+    padding: 0 64px 0 64px;
+  }
+
+  .navbar nav .navContainer ul{
+    gap: 50px;
+  }
+
+  .section1{
+    padding: 0px 64px;
+  }
+
+}
+
+/**  screen  xl  **/
+@media (min-width: 1280px){
+  .navbar nav{
+    padding: 0 128px 0 128px;
+  }
+
+  .section1{
+    padding: 0px 128px;
+  }
+
+}
+
+/**  screen  2xl  **/
+@media (min-width: 1536px){
+  .navbar nav{
+    padding: 0 256px 0 256px;
+  }
+
+  .section1{
+    padding: 0px 256px;
+  }
+
 }
