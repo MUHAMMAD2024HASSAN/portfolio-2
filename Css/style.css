@@ -108,7 +108,9 @@
 /*** HERO SECTION ***/
 .section1{
   background-color: black;
-  padding: 0px 16px;
+  padding: 32px 16px;
+  display: flex;
+  height: calc(100vh - 80px);
 }
 
 .section1 .heroSection{
@@ -325,7 +327,7 @@
   }
 
   .section1{
-    padding: 256px 256px;
+    padding: 0px 256px;
   }
 
 }
